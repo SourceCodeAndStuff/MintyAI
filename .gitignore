@@ -1,0 +1,29 @@
+# What is deliberately NOT pushed, and how to get it back.
+#
+# The whole tree is ~629 MB, and most of that is regenerable. What is left
+# after these rules is ~74 MB: every source file, every document, every
+# model, and the measurements behind them - enough to compile the exact EA
+# that shipped, on a clean machine, without retraining anything.
+#
+# Delete any rule below if you would rather have that category on GitHub.
+
+# Compiler output (~205 MB). Rebuilt by compiling MintyAI.mq5 in MetaEditor.
+# The .ex5 also breaches GitHub's 50 MB advisory on its own - it carries all
+# 37 models inside it.
+*.ex5
+
+# Exported price history (~226 MB). Regenerate with
+# Scripts\MintyAI\MintyAIExportAll.mq5 against your broker.
+*_bars.csv
+
+# Feature-parity dumps. Rebuilt by the same export script.
+*_features_mql5.csv
+
+# PyTorch weights (~74 MB). Only needed to re-derive risk presets from an
+# existing model - python -m mintyai.retune. The .onnx files ARE the
+# shipping models and are kept.
+*.pt
+
+# Python bytecode
+__pycache__/
+*.pyc

@@ -1,0 +1,15 @@
+key,value
+symbol,NZDCHF
+timeframe,H1
+digits,5
+point,0.0000100000
+tick_size,0.0000100000
+tick_value,1.0730995407
+volume_min,0.0100
+volume_step,0.0100
+spread_current,79
+server_utc_offset_h,3
+time_basis,SERVER
+feature_version,1
+feature_count,24
+feature_signature,1024824758

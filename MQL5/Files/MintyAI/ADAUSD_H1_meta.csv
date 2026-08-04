@@ -1,0 +1,15 @@
+key,value
+symbol,ADAUSD
+timeframe,H1
+digits,4
+point,0.0001000000
+tick_size,0.0001000000
+tick_value,86.6468534195
+volume_min,0.0100
+volume_step,0.0100
+spread_current,6
+server_utc_offset_h,3
+time_basis,SERVER
+feature_version,1
+feature_count,24
+feature_signature,1024824758

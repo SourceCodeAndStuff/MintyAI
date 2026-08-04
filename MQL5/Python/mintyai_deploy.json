@@ -1,0 +1,9 @@
+{
+  "_comment": "Deployment settings. Training reads these and never overwrites them, so a retrain cannot reset how much the EA stakes. Any explicit command-line flag still wins.",
+  "_risk_from_kelly": "derive the three caps from the measured growth-optimal stake f* = E[R]/E[R^2], per symbol, instead of using fixed percentages. Past 2 x f* compounding turns negative even on a positive edge, so the High preset is deliberately pinned to that ceiling.",
+  "risk_from_kelly": true,
+  "kelly_multipliers": [0.5, 1.0, 2.0],
+  "_risk_pcts": "fallback only, used when a symbol shows no positive edge and f* cannot be computed",
+  "risk_pcts": [2.0, 5.0, 10.0],
+  "kelly_scale": 0.5
+}
